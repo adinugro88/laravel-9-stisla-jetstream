@@ -8,7 +8,7 @@ $links = [
     ],
 
     [
-        "href" => "dashboard",
+        "href" => "kelas",
         "text" => "Kelas",
         "icon" => "fas fa-fire",
         "is_multi" => false,
@@ -33,16 +33,17 @@ $navigation_links = array_to_object($links);
 <div class="main-sidebar">
     <aside id="sidebar-wrapper">
         <div class="sidebar-brand">
-            <a href="{{ route('dashboard') }}"></a>
+            <a href="{{ route('dashboard') }}">
+                <img width="100" src="{{asset("asset/logobinarykiddo.png")}}" alt="">
+            </a>
         </div>
         <div class="sidebar-brand sidebar-brand-sm">
             <a href="{{ route('dashboard') }}">
-                <img class="d-inline-block" width="32px" height="30.61px" src="" alt="">
+                <img class="d-inline-block" width="32px" height="30.61px" src="{{asset("asset/logobinarykiddo.png")}}" alt="">
             </a>
         </div>
         @foreach ($navigation_links as $link)
         <ul class="sidebar-menu">
-            <li class="menu-header">{{ $link->text }}</li>
             @if (!$link->is_multi)
             <li class="{{ Request::routeIs($link->href) ? 'active' : '' }}">
                 <a class="nav-link" href="{{ route($link->href) }}"><i class="{{$link->icon}}"></i><span>{{$link->text}}</span></a>
