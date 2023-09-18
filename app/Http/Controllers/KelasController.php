@@ -15,8 +15,8 @@ class KelasController extends Controller
     public function index()
     {
         $kelas = Kelas::all();
-        dd($kelas);
-        return view('pages.kelas.index');
+        //dd($kelas);
+        return view('pages.kelas.index',compact("kelas"));
     }
 
     /**

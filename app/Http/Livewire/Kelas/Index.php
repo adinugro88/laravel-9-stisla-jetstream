@@ -3,6 +3,7 @@
 namespace App\Http\Livewire\Kelas;
 
 use Livewire\Component;
+use App\Models\Kelas;
 
 class Index extends Component
 {

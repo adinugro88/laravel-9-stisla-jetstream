@@ -1,7 +1,8 @@
 <x-guest-layout>
     <x-jet-authentication-card>
         <x-slot name="logo">
-            <x-jet-authentication-card-logo />
+            <img width="250" src="{{asset("asset/logobinarykiddo.png")}}" alt="">
+            <h1 class="text-center ">Sistem</h1>
         </x-slot>
 
         <x-jet-validation-errors class="mb-4" />
@@ -46,3 +47,4 @@
         </form>
     </x-jet-authentication-card>
 </x-guest-layout>
+
