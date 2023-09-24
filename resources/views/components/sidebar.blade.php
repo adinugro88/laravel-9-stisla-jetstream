@@ -10,7 +10,7 @@ $links = [
     [
         "href" => "kelas",
         "text" => "Kelas",
-        "icon" => "fas fa-fire",
+        "icon" => "fa fa-code",
         "is_multi" => false,
     ],
     [
