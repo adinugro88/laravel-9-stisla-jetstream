@@ -17,6 +17,8 @@ return new class extends Migration
             $table->id();
             $table->string("kelas_point");
             $table->text("keterangan");
+            $table->integer('kelas_id')->unsigned();
+            $table->foreign('kelas_id')->references('id')->on('kelas');
             $table->timestamps();
         });
     }

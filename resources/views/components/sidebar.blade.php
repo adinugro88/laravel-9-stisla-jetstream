@@ -6,6 +6,12 @@ $links = [
         "icon" => "fas fa-fire",
         "is_multi" => false,
     ],
+    [
+        "href" => "student",
+        "text" => "Student",
+        "icon" => "fa fa-universal-access",
+        "is_multi" => false,
+    ],
 
     [
         "href" => "kelas",
