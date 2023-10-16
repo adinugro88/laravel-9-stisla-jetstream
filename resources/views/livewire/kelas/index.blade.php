@@ -27,8 +27,11 @@
             </tr>
         </thead>
         <tbody>
+
+            @if(isset($kelas))
+           
             @php
-                $no =1;
+            $no =1;
             @endphp
             @foreach ($kelas as $item)
             <tr>
@@ -38,6 +41,15 @@
                 <td>@mdo</td>
             </tr>
             @endforeach
+
+            @else
+            <tr>
+                <td><h2>data kosong</h2></td>
+                
+            </tr>
+           
+            @endif
+           
 
 
         </tbody>

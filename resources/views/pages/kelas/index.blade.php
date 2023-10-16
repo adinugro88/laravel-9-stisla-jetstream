@@ -1,5 +1,6 @@
 <x-app-layout>
     <x-slot name="header_content">
+        @yield('judul')
         <h1>Kelas</h1>
         <div class="section-header-breadcrumb">
             <div class="breadcrumb-item active"><a href="#">Dashboard</a></div>
